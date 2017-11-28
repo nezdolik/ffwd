@@ -16,13 +16,8 @@
 package com.spotify.ffwd.http;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
-import com.netflix.loadbalancer.ILoadBalancer;
-import com.netflix.loadbalancer.LoadBalancerBuilder;
 import java.io.IOException;
-import java.util.Optional;
 import lombok.Data;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -88,6 +83,4 @@ public class RawHttpClient {
             }
         });
     }
-
-
 }
